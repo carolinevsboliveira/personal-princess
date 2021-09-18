@@ -5,8 +5,8 @@ interface iProps{
     title: string
 }
 const Cards = (props: iProps) => (
-  <Card fluid>
-    <Image size="small" src={props.path} wrapped ui={false}/>
+  <Card>
+    <Image src={props.path} wrapped ui={false}/>
     <Card.Content>
       <Card.Header>{props.title}</Card.Header>
       <Card.Meta>
