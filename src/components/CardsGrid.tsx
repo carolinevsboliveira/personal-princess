@@ -6,10 +6,10 @@ const CardGrid = () => {
   return (
     <Grid>
       {documents.map((doc: any) => (
-        <>
-        {doc != null && <div key={doc.id}>
+        <div key={doc != null ? doc.key : 0}>
+        {doc != null &&
           <Grid.Row>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <Cards
                 description={doc.description}
                 path={doc.url_squared}
@@ -17,8 +17,8 @@ const CardGrid = () => {
               />
             </Grid.Column>
           </Grid.Row>
-        </div>}
-        </>
+        }
+        </div>
       ))}
     </Grid>
   );
