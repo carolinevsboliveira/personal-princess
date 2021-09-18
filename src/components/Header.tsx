@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect";
 import useFirestore from "../hooks/useFirestore";
+import IconGrid from "./IconsGrid";
 import { HeaderBox, TextWriter,HeaderSubtitle } from "./Styles/MainStyle";
 const Header = () => {
   let {documents} = useFirestore("details")
@@ -7,9 +8,9 @@ const Header = () => {
   return (
    <>
    {details &&  
+   
     <HeaderBox>
         <TextWriter>
-          {/* Style will be inherited from the parent element */}
           <Typewriter
             options={{
               loop: true
@@ -25,6 +26,7 @@ const Header = () => {
         <HeaderSubtitle>
          {details.subtitle}
         </HeaderSubtitle>
+        <IconGrid />
     </HeaderBox>}
    </>
   );
