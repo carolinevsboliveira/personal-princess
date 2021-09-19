@@ -4,7 +4,7 @@ const HeaderBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9rem;
+  padding: 9rem 0 5rem 0;
   flex-direction: column;
 `;
 const TextWriter = styled.span`
