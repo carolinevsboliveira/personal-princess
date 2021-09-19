@@ -5,7 +5,6 @@ import { GridBox } from "./Styles/MainStyle";
 const CardGrid = () => {
   const { documents } = useFirestore("images");
   return (
-    <GridBox>
       <Grid centered>
         {documents.map((doc: any) => (
           <div key={doc != null ? doc.key : 0}>
@@ -23,7 +22,6 @@ const CardGrid = () => {
           </div>
         ))}
       </Grid>
-    </GridBox>
   );
 };
 
