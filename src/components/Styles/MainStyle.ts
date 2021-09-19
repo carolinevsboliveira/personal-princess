@@ -26,6 +26,9 @@ const IconLink = styled.a`
   padding: 0 3rem;
 `;
 const GridBox = styled.div`
-  padding: 0 2em;
+  padding: 0 2em 5em 0;
 `;
-export { TextWriter, HeaderBox, HeaderSubtitle, IconGridBox, IconLink, GridBox };
+const CardBox = styled.div`
+  padding-bottom: 2rem;
+`;
+export { TextWriter, HeaderBox, HeaderSubtitle, IconGridBox, IconLink, GridBox, CardBox };
