@@ -4,7 +4,7 @@ const HeaderBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10rem;
+  padding: 9rem;
   flex-direction: column;
 `;
 const TextWriter = styled.span`
@@ -12,14 +12,20 @@ const TextWriter = styled.span`
   font-size: 3rem;
 `;
 const HeaderSubtitle = styled.h3`
+    width: 20rem;
     padding-top: 1rem;
   font-size: 1.5rem;
   color: #bbbbbb;
 `;
 const IconGridBox = styled.div`
-  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
 `;
 const IconLink = styled.a`
   padding: 0 3rem;
 `;
-export { TextWriter, HeaderBox, HeaderSubtitle, IconGridBox, IconLink };
+const GridBox = styled.div`
+  padding: 0 2em;
+`;
+export { TextWriter, HeaderBox, HeaderSubtitle, IconGridBox, IconLink, GridBox };
