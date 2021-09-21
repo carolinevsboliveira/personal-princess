@@ -4,6 +4,7 @@ interface iProps {
   path: string;
   description: string;
   title: string;
+
 }
 const Cards = (props: iProps) => (
   <CardBox>
@@ -11,6 +12,7 @@ const Cards = (props: iProps) => (
       <ProfileImage>
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/photogallery-48237.appspot.com/o/badbubblee_compressed.jpg?alt=media&token=ebe0b6c7-ec62-4456-a928-89990066d7cc"
+          alt="Profile Image"
           avatar
         />
         <span>lapis_lazullii</span>
