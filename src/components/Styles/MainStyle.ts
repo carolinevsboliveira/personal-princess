@@ -44,6 +44,17 @@ const ProfileImage = styled.div`
     font-weight: 900;
   }
 `;
+const ModalPhotoBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50vh;
+    height: auto;
+    padding-bottom: 1em;
+  }
+`;
 export {
   TextWriter,
   HeaderBox,
@@ -52,5 +63,6 @@ export {
   IconLink,
   GridBox,
   CardBox,
-  ProfileImage
+  ProfileImage,
+  ModalPhotoBox,
 };
