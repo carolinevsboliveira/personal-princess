@@ -1,8 +1,17 @@
 import { Grid } from "semantic-ui-react";
 import useFirestore from "../hooks/useFirestore";
 import Cards from "./Cards";
-const CardGrid = () => {
+
+interface iProps {
+  setSelectedImage : Function; 
+  setModalOpened: Function
+}
+const CardGrid = (props:iProps) => {
   const { documents } = useFirestore("images");
+  const handleClick = (doc:any) => {
+    props.setSelectedImage(doc.url)
+    props.setModalOpened(true)
+  }
   return (
       <Grid centered>
         {documents.map((doc: any) => (
@@ -10,11 +19,13 @@ const CardGrid = () => {
             {doc != null && (
               <Grid.Row>
                 <Grid.Column>
-                  <Cards
+                 <div onClick={()=> {handleClick(doc)}}>
+                 <Cards
                     description={doc.description}
                     path={doc.url_squared}
                     title={doc.title}
                   />
+                 </div>
                 </Grid.Column>
               </Grid.Row>
             )}
