@@ -1,7 +1,6 @@
 import { Grid } from "semantic-ui-react";
 import useFirestore from "../hooks/useFirestore";
 import Cards from "./Cards";
-import { GridBox } from "./Styles/MainStyle";
 const CardGrid = () => {
   const { documents } = useFirestore("images");
   return (
