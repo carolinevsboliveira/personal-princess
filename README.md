@@ -46,5 +46,5 @@ An application used to display authorial drawings, built with ReactJs and Fireba
     ```  
 
 ## Take a look
-
+1. This amazing repository: [Firegram](https://github.com/iamshaunjp/firegram/tree/final-files)
 ### Developed by Caroline Oliveira
