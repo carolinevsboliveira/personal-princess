@@ -2,7 +2,8 @@
 
 ![](https://firebasestorage.googleapis.com/v0/b/photogallery-48237.appspot.com/o/Screenshot%20from%202021-09-24%2010-27-18.png?alt=media&token=e2f6f974-eb91-431a-aa0a-6374b321ccae)
 
-An application used to display authorial drawings, built with ReactJs and Firebase.
+An application used to display authorial drawings, built with ReactJs and Firebase. 
+[Click here to visit the live app](https://princess.vercel.app/)
 
 ## Tools
 ### Setup: 
@@ -29,7 +30,7 @@ An application used to display authorial drawings, built with ReactJs and Fireba
 ### Instructions
 1. Clone:
     ```
-    git clone https://github.com/carolinevsboliveira/conversor-de-dolar-para-real
+    git clone https://github.com/carolinevsboliveira/personal-princess.git
     ``` 
 
 2. Install dependencies:
