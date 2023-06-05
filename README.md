@@ -4,6 +4,7 @@
 
 An application used to display authorial drawings, built with ReactJs and Firebase. 
 [Click here to visit the live app](https://princess.vercel.app/)
+### Current available, another repo with better features in coming. 
 
 ## Tools
 ### Setup: 
